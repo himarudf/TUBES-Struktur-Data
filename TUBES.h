@@ -54,7 +54,7 @@ void displayAvailableEvidence(int idLocation);
 void visitLocation(ListEvidence &L);
 
 
-// SUBPROGRAM INVESTIGATION BOARD (GRAPH)
+// SUBPROGRAM INVESTIGATION BOARD
 // KOSONG DULU
 
 
