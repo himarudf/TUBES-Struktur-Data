@@ -24,33 +24,7 @@ struct ListEvidence {
 
 
 // STRUCT GRAPH (INVESTIGATION BOARD)
-enum JenisObjek {
-    EVIDENCE,
-    SUSPECT,
-    LOCATION
-};
-
-struct Edge {
-    int idTujuan;
-    Edge *next;
-};
-
-typedef Edge* addressEdge;
-
-struct Vertex {
-    int idVertex;
-    JenisObjek jenis;
-    string namaObjek;
-    bool visited;
-    addressEdge firstEdge;
-    Vertex *next;
-};
-
-typedef Vertex* addressVertex;
-
-struct Graph {
-    addressVertex firstVertex;
-};
+// KOSONG DULU JANGAN LUPA ISI NANTI ABIS BELAJAR
 
 
 // PRIMITIVE SLL
@@ -64,17 +38,7 @@ void printEvidence(ListEvidence L);
 
 
 // PRIMITIVE GRAPH
-void createGraph(Graph &G);
-addressVertex allocateVertex(int id, JenisObjek jenis, string nama);
-addressEdge allocateEdge(int idTujuan);
-void insertVertex(Graph &G, addressVertex V);
-addressVertex searchVertex(Graph G, int id);
-void insertEdge(addressVertex V, int idTujuan);
-void deleteEdge(addressVertex V, int idTujuan);
-void printGraph(Graph G);
-void printConnections(Graph G, int idVertex);
-void resetVisited(Graph &G);
-void DFS(Graph &G, addressVertex V);
+// KOSONG DULU JANGAN LUPA ISI NANTI ABIS BELAJAR
 
 
 // SUBPROGRAM EVIDENCE
@@ -90,11 +54,8 @@ void displayAvailableEvidence(int idLocation);
 void visitLocation(ListEvidence &L);
 
 
-// SUBPROGRAM INVESTIGATION BOARD
-void addConnection(Graph &G, int idObjek1, int idObjek2);
-void removeConnection(Graph &G, int idObjek1, int idObjek2);
-void displayInvestigationBoard(Graph G);
-void traceConnection(Graph &G, int idVertex);
+// SUBPROGRAM INVESTIGATION BOARD (GRAPH)
+// KOSONG DULU
 
 
 // SUBPROGRAM CASE PROGRESS
@@ -102,7 +63,6 @@ void displayCaseProgress(ListEvidence L, int totalEvidence);
 
 
 // SUBPROGRAM CASE CONCLUSION
-void displaySuspects(Graph G);
-void caseConclusion(int idPilihan, int idPelakuBenar);
+// KOSONG DULU BOS
 
 #endif
