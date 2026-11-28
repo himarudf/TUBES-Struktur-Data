@@ -74,7 +74,7 @@ CriminalCase/
 
 ## Pengembang
 
-Dibuat oleh kelompok [Nama Kelompok] untuk memenuhi tugas besar mata kuliah Struktur Data.
+Dibuat oleh Kelompok 3 untuk memenuhi tugas besar mata kuliah Struktur Data.
 
 Anggota kelompok:
 
