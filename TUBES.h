@@ -19,7 +19,7 @@ struct Evidence {
     Evidence *next;
 };
 
-typedef Evidence* addressEvidence;
+typedef Evidence *addressEvidence;
 
 struct ListEvidence {
     addressEvidence first;
@@ -39,7 +39,7 @@ struct Edge {
     Edge *next;
 };
 
-typedef Edge* addressEdge;
+typedef Edge *addressEdge;
 
 struct Vertex {
     int idVertex;
@@ -50,7 +50,7 @@ struct Vertex {
     Vertex *next;
 };
 
-typedef Vertex* addressVertex;
+typedef Vertex *addressVertex;
 
 struct Graph {
     addressVertex firstVertex;
