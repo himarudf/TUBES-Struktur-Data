@@ -1,4 +1,3 @@
-
 #ifndef TUBES_H
 #define TUBES_H
 
@@ -6,12 +5,17 @@
 #include <string>
 using namespace std;
 
+
 // STRUCT SINGLY LINKED LIST (EVIDENCE)
 struct Evidence {
     int idEvidence;
     string namaEvidence;
     int idLocation;
     string namaLocation;
+    string deskripsi;
+    string hasilPemeriksaan;
+    int statusPemeriksaan;
+    int statusKoneksi;
     Evidence *next;
 };
 
@@ -77,11 +81,13 @@ void resetVisited(Graph &G);
 void DFS(Graph &G, addressVertex V);
 
 
-// SUBPROGRAM EVIDENCE
+// SUBPROGRAM EVIDENCE INVENTORY
 bool isEvidenceCollected(ListEvidence L, int id);
 void collectEvidence(ListEvidence &L, int id, string nama, int idLocation, string namaLocation);
 void displayEvidence(ListEvidence L);
 void searchEvidenceByName(ListEvidence L, string nama);
+void displayEvidenceDetail(ListEvidence L, int id);
+void examineEvidence(ListEvidence &L, int id);
 
 
 // SUBPROGRAM CRIME SCENE
